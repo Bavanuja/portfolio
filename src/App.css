@@ -1,38 +1,96 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the entire application */
 .App {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Style for the navigation bar */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a:hover {
+  background: #575757;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Style for sections */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+section h1, section h2 {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section p {
+  margin-bottom: 10px;
+}
+
+/* Intro section styles */
+#intro {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e2e2e2;
+}
+
+#intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#intro p {
+  font-size: 1.2em;
+}
+
+/* About section styles */
+#about {
+  background: #f9f9f9;
+}
+
+/* Education section styles */
+#education {
+  background: #f4f4f4;
+}
+
+/* Experience section styles */
+#experience {
+  background: #e9e9e9;
+}
+
+/* Projects section styles */
+#projects {
+  background: #f4f4f4;
+}
+
+/* Contact section styles */
+#contact {
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
 }
